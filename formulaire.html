@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+</head>
+<body>
+<font face="Arial">
+    <form action="insat.html" method="POST" name="Inscription">
+        <h1 align="center"> Inscription en licence </h1>
+        <fieldset>
+            <legend align="center">Informations personnelles</legend>
+            <div align="center">
+                <label>Votre nom :</label> <input type="text" name="nom" placeholder="Votre nom ?" size="15" maxlength="30" autofocus> <BR><BR>
+                <label>Votre prénom : </label><input type="text" name="prénom" placeholder="Votre Prénom ?" size="15" maxlength="30" > <BR><BR>
+                <label>Votre age : </label><input type="number" name="age" pattern="[0-9]{3}"  placeholder="Votre age ?" maxlength="3"> <BR><BR>
+                <label>Votre adresse : </label><textarea name="adresse" rows="5" cols="40" placeholder="Votre adresse ?"></textarea><BR><BR>
+                <label for="passwd"> Votre mot de passe: </label><INPUT TYPE ="password" NAME="passwd" ID ="passwd" SIZE=15 MAXLENGTH=30 required><BR><BR>
+                <label for="password"> Retapez mot de passe: </label><INPUT TYPE ="password" NAME="passwd" ID ="password" SIZE=15 MAXLENGTH=30 required><BR><BR>
+                <label>Saisir voter email :</label> <input type="email" placeholder="Email"><BR><BR>
+                <label>URL du votre site : </label> <input type="url" placeholder="URL"><BR><BR>
+                <label>Saisir votre date de naissance : </label><input type="date" placeholder="Votre date de naissance"><BR><BR>
+                <label>Votre commentaire :</label><input NAME="comment" ROWS="5" COLS="4" placeholder="Votre commentaire" pattern="[I][N][S][A][T][0-9]{4} "><BR><BR>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend align="center">Gestion des groupes</legend>
+            <div align="center">
+                <label>Votre groupe :</label><INPUT TYPE ="radio" NAME ="Groupe"  VALUE="Groupe1">Groupe1<INPUT TYPE ="radio" NAME ="Groupe"  VALUE="Groupe2">Groupe2<INPUT TYPE ="radio" NAME ="Groupe"  VALUE="Groupe3">Groupe<BR><BR>
+                <label>Numéro de carte d'étudiant : </label><input type="number" pattern="[0-9]{9}" placeholder="Numéro de carte d'étudiant ?" name="carte d'étudiant "><BR><BR>
+                Choisissez les options que vous désirez : <select name="option">
+                    <option value="J2ee">J2ee</option>
+                    <option value="Android">Android</option>
+                    <option value="Net">.Net</option>
+                    <option value="HTML5">HTML5</option>
+                    <option value="Flex">Flex</option>
+                </select>
+            </div>
+        </fieldset>
+        <BR>
+        <div align="center"><INPUT TYPE="submit" VALUE="Valider">
+        <input type="reset" value="réinitialiser"></div>
+    </form>
+</font>
+</body>
+</html>
